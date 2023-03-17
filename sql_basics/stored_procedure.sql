@@ -1,3 +1,7 @@
+-- Delimiter can be any symbol
+-- Delimiter helps to type a statement across multiple lines
+-- Always end with delimiter ;
+
 mysql> DELIMITER //
 mysql> CREATE PROCEDURE Temp_Employee()
     -> BEGIN
@@ -16,4 +20,5 @@ mysql> CREATE PROCEDURE Temp_Employee()
     -> END //
 mysql> DELIMITER ;
 
+-- Execute the Stored procedure
 CALL Temp_Employee2;
